@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Application</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body onload="showdate()">
+
+
+<div class="container-fluid p-5">
+	<div class="row">
+		<div class="col-lg-2 col-md-2 col-sm-2 col-12">
+			
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-8 col-12 form-container ">
+			
+			<!-- <form class="form-inline">
+				
+			  <div class="form-row align-items-center">
+			    <div class="col-auto">
+			      <input type="search" class="form-control mb-2" placeholder="Enter City Name" required autocomplete="on">
+			    </div>
+			    
+			    <div class="col-auto">
+			      <button type="submit" class="btn btn-primary mb-2">Search</button>
+			    </div>
+			  </div>
+
+			</form>
+ -->
+ 			<div>
+ 				<input type="text" autocomplete="on" class="search-box form-control" required placeholder="Enter City Name...">
+
+ 			</div>
+ 			
+			<main class="form-container1">
+				<section class="location">
+					<div class="city">----</div>
+					<div class="date"></div>
+				</section>
+				<div class="current">
+					<div class="temp">--<span>°c</span></div>
+
+					<div class="weather">--</div>
+					<div class="weather-desc">--</div>
+					<div class="hi-low">--°c / --°c</div>
+					<div class="wind-speed">--m/s</div>
+
+					<p>
+					  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onclick="showmore()">Upcoming Forecast</button>
+					</p>
+				</div>
+				<div class="collapse" id="collapseExample">
+				<div class="row">				
+				
+				 <div id = "date1 "  class="col-lg-2 col-md-2 col-sm-2">
+				 	
+				 </div>
+
+				 <div id = "date2 " class="col-lg-2 col-md-2 col-sm-2">
+				 	
+				 </div>
+				 <div id = "date3 " class="col-lg-2 col-md-2 col-sm-2">hello</div>
+				 <div id = "date4 " class="col-lg-2 col-md-2 col-sm-2">hello</div>
+				 <div id = "date5 " class="col-lg-2 col-md-2 col-sm-2">hello</div>
+				 <div id = "date6 " class="col-lg-2 col-md-2 col-sm-2">hello</div>
+				</div>
+			</div>
+			</main>
+		</div>
+		
+		<div class="col-lg-2 col-md-2 col-sm-2 col-12">
+			
+		</div>
+		
+	</div>
+
+	
+</div>
+
+
+
+<script type="text/javascript">
+	function showdate(){
+		let now = new Date();
+	   let date = document.querySelector('.location .date');
+	   date.innerText = dateBuilder(now);
+	}
+	function dateBuilder (d) {
+	   let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	   let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+	   let day = days[d.getDay()];
+	   let date = d.getDate();
+	   let month = months[d.getMonth()];
+	   let year = d.getFullYear();
+
+	   return `${day} ${date} ${month} ${year}`;
+ }
+
+</script>
+
+<script src="javascript1.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+</body>
+</html>

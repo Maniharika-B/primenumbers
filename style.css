@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  background-image: url("images/city4.jpg");
+
+  background-repeat: no-repeat;
+}
+.form-container{
+	border: 0px solid #ffff;
+	padding: 50px 60px;
+	margin-top: 20vh;
+	-webkit-box-shadow: inset 10px 10px 241px -22px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 10px 10px 241px -22px rgba(0,0,0,0.75);
+box-shadow: inset 10px 10px 241px -22px rgba(0,0,0,0.75);
+
+}
+.form-container1{
+	border: 0px solid #ffff;
+	padding: 50px 60px;
+	margin-top: 10px;
+	color: white;
+	-webkit-box-shadow: inset 10px 10px 242px 166px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 10px 10px 242px 166px rgba(0,0,0,0.75);
+box-shadow: inset 10px 10px 242px 166px rgba(0,0,0,0.75);
+
+text-align: center;
+}
+
+.location .city{
+	font-size: 32px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.location .date{
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.current .temp{
+	font-size: 102px;
+	font-weight: 900;
+	margin: 30px 0px;
+	text-shadow: 2px 10px rgba(0,0,0,0.2);
+
+}
+.current .temp span{
+	font-weight: 500;
+}
+
+.current .weather{
+	font-size: 32px;
+	font-weight: 700;
+	font-style: italic;
+	text-shadow: 0px 3px rgba(0,0,0,0.4);
+}
+
+.current .weather-desc{
+	font-size: 26px;
+	margin-bottom: 40px;
+}
+
+.current .hi-low{
+	font-size: 24px;
+	font-weight: 500;
+	text-shadow: 0px 4px rgba(0,0,0,0.4);
+}
+
+.form-control{
+	border-radius: 2px 12px;
+}
+
+.current .wind-speed{
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 40px;
+	text-shadow: 0px 4px rgba(0,0,0,0.4);
+}
+
+.card-body{
+	background-color: rgba(255,255,255,0.1)
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#first{
+	display: none;
+}
+</style>
+</head>
+<body>
+
+<h1>Hello World!</h1>
+
+<p id="first">This page has a light blue background color!</p>
+<a href="javascript: showmore()">show</a>
+
+<script type="text/javascript">
+	function showmore(){
+		var ids = document.getElementById('first');
+		ids.setAttribute('style',"display: block;");
+	}
+</script>
+</body>
+</html>
